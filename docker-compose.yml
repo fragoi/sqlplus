@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  sqlplus:
+    image: sqlplus:12.2
+    stdin_open: true
+    tty: true
+    hostname: app-it-03-d.live.tipp24.net
+    environment:
+    - URL=LN_APP/oJbjFCoooE@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=db-rac-scan-d.live.tipp24.net)(PORT=1521))(CONNECT_DATA=(SERVICE_NAME=GIO01_RW)))
